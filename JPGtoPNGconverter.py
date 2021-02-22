@@ -13,6 +13,7 @@ if not os.path.exists(output_folder):
 # loop through pokedex
 # convert images to png
 # save to new folder
+
 for filename in os.listdir(image_folder):
     img = Image.open(f'{image_folder}{filename}')
     clean_name = os.path.splitext(filename)[0]
